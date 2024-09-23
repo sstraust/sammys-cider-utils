@@ -1,7 +1,6 @@
 ;; -*- lexical-binding: t -*-
 
 
-
 (defvar create-cider-test-macro
   "(defmacro convert-to-test [intended-output & args]
     (let [test-form (last args)]
@@ -30,7 +29,6 @@
 	     (insert (read (nrepl-dict-get value "value")))))))
      nil
      (cider--nrepl-pr-request-map)))
-
 
 
 (defun cider-write-region-to-test (start end)
